@@ -2,6 +2,7 @@ import gulp from "gulp";
 import { plugins } from "./gulp/config/plugins.js";
 
 import { path } from "./gulp/config/path.js";
+import ghPages from "gh-pages";
 
 global.app = {
   path: path,
