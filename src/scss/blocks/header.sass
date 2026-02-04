@@ -1,0 +1,130 @@
+.header
+  position: fixed
+  z-index: 100
+  width: 100vw
+  height: 80px
+  padding: 5px 0
+  background: $white
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+
+  @media(max-width: $max-tablet)
+    height: 60px
+
+  @media(max-width: $max-mobile)
+    height: 50px
+    padding: 2px 0
+
+.header_container
+  position: relative
+  display: flex
+  align-items: center
+  gap: 70px
+  width: 100%
+  height: 100%
+
+  @media(max-width: $max-tablet)
+    gap: 30px
+    justify-content: space-between
+
+  @media(max-width: $max-mobile)
+    gap: 20px
+    align-items: center
+
+.header.header--active
+  @media(max-width: $max-mobile)
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 100
+    display: block
+    width: 100%
+    height: 100vh
+    max-height: 100vh
+    overflow-y: auto
+    background-color: $white
+
+  @media(max-width: $max-mobile)
+    .header_container
+      align-items: flex-start
+
+    .header_menu-button
+      position: absolute
+      right: 15px
+      top: 3px
+
+    .header_menu-list
+      display: flex
+      flex-direction: column
+      gap: 10px
+      width: fit-content
+      align-items: flex-start
+      justify-content: flex-start
+      margin: 20px 0
+
+
+.header_menu-list
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 40px
+  width: fit-content
+  margin-left: auto
+
+  @media(max-width: $max-tablet)
+    gap: 30px
+    width: fit-content
+
+  @media(max-width: $max-mobile)
+    display: none
+    gap: 10px
+
+.header_menu-item
+  line-height: 100%
+
+  @media(max-width: $max-mobile)
+    margin-bottom: 10px
+
+.header_menu-link
+  white-space: nowrap
+  font-size: 20px
+  line-height: 24px
+
+  @media(max-width: $max-tablet)
+    font-size: 16px
+    line-height: 22px
+
+  @media(max-width: $max-mobile)
+    font-size: 16px
+    line-height: 22px
+
+  @media (hover: hover), screen and (min-width: 0\0)
+    &:hover,
+    &:active,
+    &:focus
+      text-decoration: underline
+
+.header_menu-item--active
+  .header_menu-link
+    text-decoration: underline
+
+.header_menu-button
+  display: none
+  justify-content: center
+  align-items: center
+  width: 40px
+  min-width: 40px
+  height: 40px
+  margin-left: auto
+  background-color: $light-blue
+
+  @media(max-width: $max-mobile)
+    display: flex
+
+  svg
+    display: block
+    max-width: 30px
+    max-height: 30px
+    fill: $black
+
+    @media(max-width: $max-mobile)
+      transform: scale(0.666)

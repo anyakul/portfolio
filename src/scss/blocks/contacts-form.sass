@@ -1,0 +1,48 @@
+.contacts-form_button
+  margin: auto
+  color: $white
+  background-color: $blue
+
+.contacts-form_list
+  display: flex
+  flex-wrap: wrap
+  gap: 20px
+  max-width: 600px
+  margin: auto
+  margin-bottom: 30px
+
+  @media(max-width: $max-tablet)
+    gap: 10px
+    margin-bottom: 20px
+
+  @media(max-width: $max-mobile)
+    gap: 5px
+    margin-bottom: 20px
+
+.contacts-form_item-one
+  width: 100%
+
+.contacts-form_item-two
+  width: calc(50% - 10px)
+
+  @media(max-width: $max-mobile)
+    width: 100%
+
+.contacts-form_item-three
+  width: calc(33% - 12px)
+
+  @media(max-width: $max-tablet)
+    width: calc(33% - 5px)
+
+  @media(max-width: $max-mobile)
+    width: 100%
+
+.modal
+  .contacts-form_item-three
+    width: calc(33% - 12px)
+
+    @media(max-width: $max-tablet)
+      width: calc(33% - 6px)
+
+    @media(max-width: $max-mobile)
+      width: 100%

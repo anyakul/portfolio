@@ -1,0 +1,39 @@
+.social
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  gap: 5px
+
+.social_link
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 48px
+  min-width: 48px
+  height: 34px
+  border-radius: 50px
+
+  svg
+    display: block
+    max-width: 14px
+    max-height: 14px
+    fill: $white
+
+  &:hover,
+  &:active,
+  &:focus
+    opacity: 0.8
+
+.social_link-telegram
+  background: linear-gradient(250.2deg, #41B4E6 0%, #309FCF 100%)
+
+.social_link-phone
+  background: linear-gradient(191.86deg, #58CE68 0%, #359E43 100%)
+
+.social_link-github
+  border-radius: 0
+
+  svg
+    max-width: 35px
+    max-height: 35px

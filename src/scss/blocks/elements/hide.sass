@@ -1,0 +1,40 @@
+[data-hide-type="tablet"]
+  [data-hide="button"]
+    display: none
+
+    @media(max-width: $max-tablet)
+      display: block
+
+  [data-hide="hidden"]
+    @media(max-width: $max-tablet)
+      display: none
+
+[data-hide-type="mobile"]
+  [data-hide="hidden"]
+    @media(max-width: $max-mobile)
+      display: none
+
+[data-hide="item"].is-active
+  [data-hide="hidden"]
+    display: flex
+    flex-direction: column
+
+  [data-hide="span"]
+    display: none
+
+  [data-hide="span-active"]
+    display: flex
+
+[data-hide="item"]
+  [data-hide="hidden"]
+    display: none
+
+  [data-hide="span"]
+    display: flex
+
+  [data-hide="span-active"]
+    display: none
+
+[data-hide="mobile-hidden"]
+  @media(max-width: $max-mobile)
+    display: none

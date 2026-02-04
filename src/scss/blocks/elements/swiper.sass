@@ -1,0 +1,100 @@
+.swiper
+  position: relative
+  overflow: visible
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  transform: none
+
+.swiper-wrapper
+  height: fit-content
+
+.button-prev,
+.button-next
+  z-index: 95
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 42px
+  min-width: 42px
+  height: 42px
+  border-radius: 50%
+  border: 1px dotted $black-2
+
+  @media(max-width: $max-mobile)
+    width: 36px
+    min-width: 36px
+    height: 36px
+
+  svg
+    fill: $black-2
+
+  @media (hover: hover), screen and (min-width: 0\0)
+    &:hover,
+    &:active,
+    &:focus
+      border: 1px dotted $black-2
+
+  svg
+    display: block
+    max-width: 100%
+    max-height: 100%
+    fill: $black-2
+
+.button-prev
+  svg
+    transform: rotate(180deg)
+
+.swiper-buttons-pagination-number
+  display: flex
+  align-items: center
+  gap: 15px
+  width: 100%
+  height: 50px
+
+  @media(max-width: $max-mobile)
+    gap: 12px
+    height: 36px
+
+  .swiper-paginations
+    height: fit-content
+    display: flex
+    align-items: center
+    width: 100%
+    height: 4px
+    border: none
+    border: 1px solid $light-blue
+
+    .swiper-pagination-bullet
+      position: static
+      width: 100%
+      height: 4px
+      margin-right: 0
+      border: none
+      border-radius: 0
+      opacity: 1
+      left: 0
+      background-color: $white
+
+    .swiper-pagination-bullet-active
+      background-color: $light-blue
+
+.swiper-number
+  white-space: nowrap
+
+.swiper-number-current
+  white-space: nowrap
+  font-size: 22px
+  line-height: 25.78px
+
+  @media(max-width: $max-mobile)
+    font-size: 16px
+    line-height: 18.75px
+
+.swiper-number-slash,
+.swiper-number-total
+  font-size: 18px
+  line-height: 21.09px
+
+  @media(max-width: $max-mobile)
+    font-size: 12px
+    line-height: 14.06px

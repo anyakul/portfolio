@@ -1,0 +1,23 @@
+.services_list
+  display: flex
+  flex-wrap: wrap
+  gap: 30px
+
+  @media(max-width: $max-tablet)
+    gap: 20px
+
+  @media(max-width: $max-mobile)
+    gap: 10px
+
+.services_item
+  width: calc(33% - 18px)
+  text-align: center
+
+  @media(max-width: $max-tablet)
+    width: calc(50% - 10px)
+
+  @media(max-width: $max-mobile)
+    width: 100%
+
+.services_item-text
+  margin-bottom: 10px
