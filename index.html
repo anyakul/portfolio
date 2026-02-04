@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Involve-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Involve-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Involve-SemiBold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Портфолио</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header_container container">
+        <ul class="header_menu-list">
+            <li class="header_menu-item header_menu-item--active">
+              <a class="header_menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="technologies.html">Технологии и инструменты</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="services.html">Услуги</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        <button class="header_menu-button">
+          <svg width="30" height="22">
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="intro_container container">
+          <div class="intro_texts">
+            <h1 class="intro_header">Привет, я Аня</h1>
+            <p class="intro_big-text">Веб-разработчик</p>
+            <p class="intro_text big-text">За годы погружения в веб-разработку я научилась воплощать идеи в потрясающие продукты, которые решают реальные задачи бизнеса и делают жизнь проще. Будь то создание элегантного лендоса, разработка мощного корпоративного портала или интернет-магазина — я одинаково увлечена каждой задачей.</p>
+            <p class="intro_text big-text">Буду рада сотрудничеству!</p>
+            <div class="intro_buttons">
+              <button class="blue-button" data-open-modal="comments-modal">Написать мне</button>
+              <ul class="intro_social social">
+                <li class="social_item">
+                  <a class="social_link social_link-telegram" aria-label="Наша компания в Телеграмме" rel="nofollow" target="_blank" href="https://telegram.me/@anyakulik">
+                    <svg width="14" height="12">
+                      <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social_item">
+                  <a class="social_link social_link-phone" aria-label="Позвонить" rel="nofollow" target="_blank" href="tel:+79260673983">
+                    <svg width="14" height="14">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social_item">
+                  <a class="social_link social_link-github" aria-label="Наша компания в Github" rel="nofollow" target="_blank" href="https://github.com/anyakul">
+                    <svg width="35" height="35">
+                      <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="intro_avatar">
+            <picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" width="200" height="200" alt="Аня"></picture>
+          </div>
+        </div>
+      </section>
+      <div class="menu_content">
+        <div class="menu_content-container container">
+          <aside class="menu">
+            <ul class="menu_list">
+              <li class="menu_item">
+                <a class="menu_link big-text" href="#portfolio">Портфолио</a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link big-text" href="#services">Услуги</a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link big-text" href="#technologies">Технологии и инструменты</a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link big-text" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </aside>
+          <div class="content">
+            <section class="portfolio section swiper" id="portfolio">
+              <h2 class="portfolio_header small-headers">Портфолио</h2>
+              <p class="portfolio_text big-text">Здесь представлена коллекция моих лучших работ, созданных с любовью и вниманием к деталям. Каждая представленная работа — отражение моего опыта, творчества и стремления создавать качественные и полезные продукты.</p>
+              <div class="portfolio_slider swiper">
+                <ul class="portfolio_list swiper-wrapper">
+                  <li class="portfolio_item swiper-slide">
+                    <div class="portfolio_item-image">
+                      <picture><source srcset="img/site-1.webp" type="image/webp"><img src="img/site-1.png" width="400" height="400" alt="Проект"></picture>
+                    </div>
+                    <h3 class="portfolio_item-header">Интернет-магазин бильярдных столов</h3>
+                    <p class="portfolio_item-text"> Найдите свой идеальный стол для идеальной игры! Наш сайт предлагает широкий ассортимент качественных бильярдных столов на любой вкус и бюджет. Погрузитесь в атмосферу элитного отдыха и наслаждения игрой уже сегодня!</p>
+                    <ul class="portfolio_item-links">
+                      <li class="portfolio_item-link">
+                        <a href="https://anyakul.github.io/billiard/index.html" rel="nofollow" target="_blank">Ссылка на сайт</a>
+                      </li>
+                      <li class="portfolio_item-link">
+                        <a href="https://github.com/anyakul/billiard" rel="nofollow" target="_blank">Ссылка на гитхабе</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="portfolio_item swiper-slide">
+                    <div class="portfolio_item-image">
+                      <picture><source srcset="img/site-1.webp" type="image/webp"><img src="img/site-1.png" width="400" height="400" alt="Проект"></picture>
+                    </div>
+                    <h3 class="portfolio_item-header">Интернет-магазин бильярдных столов</h3>
+                    <p class="portfolio_item-text"> Найдите свой идеальный стол для идеальной игры! Наш сайт предлагает широкий ассортимент качественных бильярдных столов на любой вкус и бюджет. Погрузитесь в атмосферу элитного отдыха и наслаждения игрой уже сегодня!</p>
+                    <ul class="portfolio_item-links">
+                      <li class="portfolio_item-link">
+                        <a href="https://anyakul.github.io/billiard/index.html" rel="nofollow" target="_blank">Ссылка на сайт</a>
+                      </li>
+                      <li class="portfolio_item-link">
+                        <a href="https://github.com/anyakul/billiard" rel="nofollow" target="_blank">Ссылка на гитхабе</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="portfolio_item swiper-slide">
+                    <div class="portfolio_item-image">
+                      <picture><source srcset="img/site-1.webp" type="image/webp"><img src="img/site-1.png" width="400" height="400" alt="Проект"></picture>
+                    </div>
+                    <h3 class="portfolio_item-header">Интернет-магазин бильярдных столов</h3>
+                    <p class="portfolio_item-text"> Найдите свой идеальный стол для идеальной игры! Наш сайт предлагает широкий ассортимент качественных бильярдных столов на любой вкус и бюджет. Погрузитесь в атмосферу элитного отдыха и наслаждения игрой уже сегодня!</p>
+                    <ul class="portfolio_item-links">
+                      <li class="portfolio_item-link">
+                        <a href="https://anyakul.github.io/billiard/index.html" rel="nofollow" target="_blank">Ссылка на сайт</a>
+                      </li>
+                      <li class="portfolio_item-link">
+                        <a href="https://github.com/anyakul/billiard" rel="nofollow" target="_blank">Ссылка на гитхабе</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="portfolio_item swiper-slide">
+                    <div class="portfolio_item-image">
+                      <picture><source srcset="img/site-1.webp" type="image/webp"><img src="img/site-1.png" width="400" height="400" alt="Проект"></picture>
+                    </div>
+                    <h3 class="portfolio_item-header">Интернет-магазин бильярдных столов</h3>
+                    <p class="portfolio_item-text"> Найдите свой идеальный стол для идеальной игры! Наш сайт предлагает широкий ассортимент качественных бильярдных столов на любой вкус и бюджет. Погрузитесь в атмосферу элитного отдыха и наслаждения игрой уже сегодня!</p>
+                    <ul class="portfolio_item-links">
+                      <li class="portfolio_item-link">
+                        <a href="https://anyakul.github.io/billiard/index.html" rel="nofollow" target="_blank">Ссылка на сайт</a>
+                      </li>
+                      <li class="portfolio_item-link">
+                        <a href="https://github.com/anyakul/billiard" rel="nofollow" target="_blank">Ссылка на гитхабе</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="portfolio_nav-buttons swiper-buttons-pagination-number">
+                  <button class="portfolio_button-prev button-prev" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </button>
+                  <button class="portfolio_button-next button-next" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="portfolio_pagination swiper-paginations"></div>
+                  <div class="portfolio_number swiper-number"></div>
+                </div>
+              </div>
+              <a class="portfolio_button blue-button" href="portfolio.html">Показать еще</a>
+            </section>
+            <section class="services section" id="services">
+              <h2 class="services_header small-headers">Услуги</h2>
+              <p class="services_text big-text">Я предлагаю полный спектр профессиональных услуг для создания успешных и эффективных веб-решений, ориентированных на достижение ваших бизнес-целей.</p>
+              <ul class="services_list">
+                <li class="services_item">
+                  <picture><source srcset="img/icon-frontend.webp" type="image/webp"><img src="img/icon-frontend.png" width="50" height="50" alt="Фронтенд-разработка"></picture>
+                  <h3 class="services_item-header">Фронтенд-разработка</h3>
+                  <p class="services_item-text">Профессиональная адаптивная и кроссбраузерная верстка сайтов с использованием современных технологий (HTML5, CSS3, JavaScript, Vue.js). Качественный и быстрый интерфейс, оптимизированный под любые устройства и браузеры.</p>
+                </li>
+                <li class="services_item">
+                  <picture><source srcset="img/icon-backend.webp" type="image/webp"><img src="img/icon-backend.png" width="50" height="50" alt="Бэкэнд-разработка"></picture>
+                  <h3 class="services_item-header">Бэкэнд-разработка</h3>
+                  <p class="services_item-text">создание серверной части сайтов и веб-приложений с использованием API, систем управления контентом (CMS), фреймворка Yii, языков программирования (PHP, Node.js) и баз данных (MySQL, PostgreSQL, MongoDB).</p>
+                </li>
+                <li class="services_item">
+                  <picture><source srcset="img/icon-content.webp" type="image/webp"><img src="img/icon-content.png" width="50" height="50" alt="Дальнейшая разработка"></picture>
+                  <h3 class="services_item-header">Дальнейшая работа с сайтом</h3>
+                  <p class="services_item-text">SEO-продвижение сайта (анализ, внутренняя и внешняя оптимизация, подбор ключевых слов), а также помощь в подборе и подготовке качественного контента для сайта.</p>
+                </li>
+              </ul>
+            </section>
+            <section class="technologies section" id="technologies" data-tabs="parent">
+              <h2 class="technologies_header small-headers">Технологии и инструменты</h2>
+              <p class="technologies_text big-text">Моя профессиональная деятельность сосредоточена на создании ярких и удобных веб-решений. Вот основные навыки, которые делают мою работу эффективнее</p>
+              <ul class="technologies_controls" data-tabs="controls">
+                <li class="technologies_control">
+                  <button class="technologies_control-button" data-tabs="control" type="button">Фронтенд</button>
+                </li>
+                <li class="technologies_control">
+                  <button class="technologies_control-button" data-tabs="control" type="button">Бэкэнд</button>
+                </li>
+                <li class="technologies_control">
+                  <button class="technologies_control-button" data-tabs="control" type="button">Общие технологии</button>
+                </li>
+              </ul>
+              <div class="technologies_content" data-tabs="content">
+                <div class="technologies_element" data-tabs="element">
+                  <div class="technologies_table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Технологии</th>
+                          <th colspan="2">Инструменты</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td rowspan="4">HTML</td>
+                          <td colspan="2">HTML5</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">Технология БЭМ</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">Адаптивная резиновая верстка</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">Кроссбраузерная верстка</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="8">CSS</td>
+                          <td colspan="2">CSS3</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">Препроцессоры</td>
+                          <td>LESS</td>
+                        </tr>
+                        <tr>
+                          <td>SASS/SCSS</td>
+                        </tr>
+                        <tr>
+                          <td>PostCSS</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">Библиотеки и фреймворки</td>
+                          <td>bootstrap</td>
+                        </tr>
+                        <tr>
+                          <td>normalize.css</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">Дополнительные инструменты</td>
+                          <td>Анимация</td>
+                        </tr>
+                        <tr>
+                          <td>Pixel perfect</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="6">JavaScript</td>
+                          <td colspan="2">ECMASCRIPT 6</td>
+                        </tr>
+                        <tr>
+                          <td>Асинхронные операции и работа с сетью</td>
+                          <td>Fetch API, Promise, Async/Await, Ajax</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="4">Библиотеки и фреймворки</td>
+                          <td>Vanilla js</td>
+                        </tr>
+                        <tr>
+                          <td>React</td>
+                        </tr>
+                        <tr>
+                          <td>JQuery</td>
+                        </tr>
+                        <tr>
+                          <td>Swiper</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">Изображения и шрифты</td>
+                          <td colspan="2">Оптимизация изображений</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">Svg-спрайты</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">Типографика и работа со шрифтами</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">Дополнительные инструменты</td>
+                          <td>Менеджер пакетов</td>
+                          <td>npm (Node js)</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">Сборщики пакетов</td>
+                          <td>Gulp</td>
+                        </tr>
+                        <tr>
+                          <td>Webpack</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="technologies_element" data-tabs="element">
+                  <div class="technologies_table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Технологии</th>
+                          <th colspan="2">Инструменты</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Node js</td>
+                          <td>Библиотеки и фреймворки</td>
+                          <td>Express</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">PHP</td>
+                          <td>Библиотеки и фреймворки</td>
+                          <td>Yii</td>
+                        </tr>
+                        <tr>
+                          <td>Инструменты</td>
+                          <td>Composer</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">Базы данных</td>
+                          <td colspan="2">MySQL</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">PostgreSQL</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="9">Функционал</td>
+                          <td rowspan="3">Хранение и управление данными</td>
+                          <td>Организация CRUD-операций (создание, чтение, обновление, удаление) с базой данных</td>
+                        </tr>
+                        <tr>
+                          <td>Поиск и сортировка данных.</td>
+                        </tr>
+                        <tr>
+                          <td>Реализация фильтров и пагинации.</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">Безопасность</td>
+                          <td>Защита от инъекций (SQL-инъекции, XSS, CSRF).</td>
+                        </tr>
+                        <tr>
+                          <td>SSL/TLS сертификаты для защиты соединения.</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">Интеграции с внешними сервисами</td>
+                          <td>Работа с API платежных систем (PayPal, Яндекс.Касса)</td>
+                        </tr>
+                        <tr>
+                          <td>Доступ к внешним API (геолокация, погодные условия, курсы валют и т.д.)</td>
+                        </tr>
+                        <tr>
+                          <td>Автоматизация и задачи CROn</td>
+                          <td>Планирование регулярных задач (cron jobs, таймеры).</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">Формы обратной связи</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="technologies_element" data-tabs="element">
+                  <div class="technologies_table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Технологии</th>
+                          <th>Инструменты</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Системы контроля версий</td>
+                          <td>Git и Github</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3">Сайты-конструкторы и системы управления контентом</td>
+                          <td>WordPress</td>
+                        </tr>
+                        <tr>
+                          <td>Tilda</td>
+                        </tr>
+                        <tr>
+                          <td>Modx</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="contacts section" id="contacts">
+              <h2 class="contacts_header small-headers">Контакты</h2>
+              <p class="contacts_text big-text">Оставьте заявку и мы ответим вам в ближайшее время!</p>
+              <form class="contacts-form form" action="#" method="post">
+                <ul class="contacts-form_list">
+                  <li class="contacts-form_item contacts-form_item-three">
+                    <label for="contacts_name" class="visually-hidden" autocomplete="off">Введите ваше имя</label>
+                    <input type="text" id="contacts_name" name="name" placeholder="Введите ваше имя" autocomplete="off" required>
+                  </li>
+                  <li class="contacts-form_item contacts-form_item-three">
+                    <label for="contacts_phone" class="visually-hidden">Телефон</label>
+                    <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="contacts_phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" autocomplete="off" required>
+                  </li>
+                  <li class="contacts-form_item contacts-form_item-three">
+                    <label for="contacts_email" class="visually-hidden">Email</label>
+                    <input type="email" id="contacts_email" name="email" placeholder="Email"
+                      pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" autocomplete="off" required>
+                  </li>
+                  <li class="contacts-form_item contacts-form_item-one">
+                    <label for="contacts_message" class="visually-hidden" name="message">Сообщение</label>
+                    <textarea id="contacts_message" placeholder="Сообщение"></textarea>
+                  </li>
+                </ul>
+                <button class="contacts-form_button blue-button" type="submit">Связаться с нами</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="btn-up btn-up-hide btn-up_hide"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer_container container">
+        <ul class="footer_menu-list">
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="index.html">Главная</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="technologies.html">Технологии и инструменты</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="services.html">Услуги</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <section class="modal modal_-preload" data-modal="comments-modal">
+      <div class="modal_wrapper">
+        <div class="modal_overlay" data-close-modal="data-close-modal"></div>
+        <div class="modal_content comments-modal">
+          <h2 class="contacts_header small-headers">Контакты</h2>
+          <p class="contacts_text big-text">Оставьте заявку и мы ответим вам в ближайшее время!</p>
+          <form class="contacts-form form" action="#" method="post">
+            <ul class="contacts-form_list">
+              <li class="contacts-form_item contacts-form_item-three">
+                <label for="modal_name" class="visually-hidden">Введите ваше имя</label>
+                <input type="text" id="modal_name" name="name" placeholder="Введите ваше имя" autocomplete="off" required>
+              </li>
+              <li class="contacts-form_item contacts-form_item-three">
+                <label for="modal_phone" class="visually-hidden">Телефон</label>
+                <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="modal_phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" autocomplete="off" required>
+              </li>
+              <li class="contacts-form_item contacts-form_item-three">
+                <label for="modal_email" class="visually-hidden">Email</label>
+                <input type="email" id="modal_email" name="email" placeholder="Email"
+                  pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" autocomplete="off" required>
+              </li>
+              <li class="contacts-form_item contacts-form_item-one">
+                <label for="modal_message" class="visually-hidden">Сообщение</label>
+                <textarea id="modal_message" placeholder="Сообщение"></textarea>
+              </li>
+            </ul>
+            <button class="contacts-form_button blue-button" type="submit">Связаться с нами</button>
+          </form>
+          <button class="modal_close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

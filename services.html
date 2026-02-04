@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Involve-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Involve-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Involve-SemiBold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Портфолио</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header_container container">
+        <ul class="header_menu-list">
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="technologies.html">Технологии и инструменты</a>
+            </li>
+            <li class="header_menu-item header_menu-item--active">
+              <a class="header_menu-link" href="services.html">Услуги</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        <button class="header_menu-button">
+          <svg width="30" height="22">
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="main main--inner">
+      <div class="menu_content">
+        <div class="menu_content-container container">
+          <div class="content">
+            <section class="services section" id="services">
+              <h2 class="services_header small-headers">Услуги</h2>
+              <p class="services_text big-text">Я предлагаю полный спектр профессиональных услуг для создания успешных и эффективных веб-решений, ориентированных на достижение ваших бизнес-целей.</p>
+              <ul class="services_list">
+                <li class="services_item">
+                  <picture><source srcset="img/icon-frontend.webp" type="image/webp"><img src="img/icon-frontend.png" width="50" height="50" alt="Фронтенд-разработка"></picture>
+                  <h3 class="services_item-header">Фронтенд-разработка</h3>
+                  <p class="services_item-text">Профессиональная адаптивная и кроссбраузерная верстка сайтов с использованием современных технологий (HTML5, CSS3, JavaScript, Vue.js). Качественный и быстрый интерфейс, оптимизированный под любые устройства и браузеры.</p>
+                </li>
+                <li class="services_item">
+                  <picture><source srcset="img/icon-backend.webp" type="image/webp"><img src="img/icon-backend.png" width="50" height="50" alt="Бэкэнд-разработка"></picture>
+                  <h3 class="services_item-header">Бэкэнд-разработка</h3>
+                  <p class="services_item-text">создание серверной части сайтов и веб-приложений с использованием API, систем управления контентом (CMS), фреймворка Yii, языков программирования (PHP, Node.js) и баз данных (MySQL, PostgreSQL, MongoDB).</p>
+                </li>
+                <li class="services_item">
+                  <picture><source srcset="img/icon-content.webp" type="image/webp"><img src="img/icon-content.png" width="50" height="50" alt="Дальнейшая разработка"></picture>
+                  <h3 class="services_item-header">Дальнейшая работа с сайтом</h3>
+                  <p class="services_item-text">SEO-продвижение сайта (анализ, внутренняя и внешняя оптимизация, подбор ключевых слов), а также помощь в подборе и подготовке качественного контента для сайта.</p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="btn-up btn-up-hide btn-up_hide"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer_container container">
+        <ul class="footer_menu-list">
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="index.html">Главная</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="technologies.html">Технологии и инструменты</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="services.html">Услуги</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <section class="modal modal_-preload" data-modal="comments-modal">
+      <div class="modal_wrapper">
+        <div class="modal_overlay" data-close-modal="data-close-modal"></div>
+        <div class="modal_content comments-modal">
+          <h2 class="contacts_header small-headers">Контакты</h2>
+          <p class="contacts_text big-text">Оставьте заявку и мы ответим вам в ближайшее время!</p>
+          <form class="contacts-form form" action="#" method="post">
+            <ul class="contacts-form_list">
+              <li class="contacts-form_item contacts-form_item-three">
+                <label for="modal_name" class="visually-hidden">Введите ваше имя</label>
+                <input type="text" id="modal_name" name="name" placeholder="Введите ваше имя" required>
+              </li>
+              <li class="contacts-form_item contacts-form_item-three">
+                <label for="modal_phone" class="visually-hidden">Телефон</label>
+                <input type="tel" placeholder="+7 (___)___-__-__" maxlength="18" id="modal_phone" name="phone" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,15}$" required>
+              </li>
+              <li class="contacts-form_item contacts-form_item-three">
+                <label for="modal_email" class="visually-hidden">Email</label>
+                <input type="email" id="modal_email" name="email" placeholder="Email"
+                  pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" required>
+              </li>
+              <li class="contacts-form_item contacts-form_item-one">
+                <label for="modal_message" class="visually-hidden">Сообщение</label>
+                <textarea id="modal_message" placeholder="Сообщение"></textarea>
+              </li>
+            </ul>
+            <button class="contacts-form_button blue-button" type="submit">Связаться с нами</button>
+          </form>
+          <button class="modal_close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
