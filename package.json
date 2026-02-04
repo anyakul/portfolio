@@ -48,6 +48,7 @@
     "cropperjs": "^1.6.2",
     "editorconfig-cli": "^0.3.0",
     "gulp-svgmin": "^4.1.0",
+    "deploy": "^1.0.3",
     "js-cookie": "^3.0.5",
     "pdfjs": "^2.5.3",
     "print-js": "^1.6.0",

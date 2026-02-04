@@ -23,7 +23,7 @@ import { ftpLoad } from "./gulp/tasks/ftp.js";
 
 ghPages.publish('deploy', {
   branch: 'main',
-  repo: 'https://github.com/anyakul/billiard/'
+  repo: 'https://github.com/anyakul/portfolio/'
 });
 
 function watcher() {
