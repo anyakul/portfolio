@@ -21,6 +21,11 @@ import { fonts } from "./gulp/tasks/fonts.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftpLoad } from "./gulp/tasks/ftp.js";
 
+ghPages.publish('deploy', {
+  branch: 'main',
+  repo: 'https://github.com/anyakul/billiard/'
+});
+
 function watcher() {
   gulp.watch(path.watch.html, copy)
   gulp.watch(path.watch.scss, scss)
