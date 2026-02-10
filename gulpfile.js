@@ -22,11 +22,6 @@ import { fonts } from "./gulp/tasks/fonts.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftpLoad } from "./gulp/tasks/ftp.js";
 
-ghPages.publish('deploy', {
-  branch: 'main',
-  repo: 'https://github.com/anyakul/portfolio/'
-});
-
 function watcher() {
   gulp.watch(path.watch.html, copy)
   gulp.watch(path.watch.scss, scss)
@@ -45,3 +40,8 @@ const start = gulp.series(dev)
 const ftp = gulp.series(reset, mainTasks, ftpLoad)
 export { start }
 export { ftp }
+
+ghPages.publish('deploy', {
+  branch: 'main',
+  repo: 'https://github.com/anyakul/portfolio/'
+});
