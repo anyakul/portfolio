@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/Involve-Medium.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/Involve-Regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/Involve-SemiBold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Roboto.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Robotobold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Robotomedium.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
   <title>Портфолио</title>
 </head>
@@ -104,6 +103,21 @@
               <p class="portfolio_text big-text">Здесь представлена коллекция моих лучших работ, созданных с любовью и вниманием к деталям. Каждая представленная работа — отражение моего опыта, творчества и стремления создавать качественные и полезные продукты.</p>
               <div class="portfolio_slider swiper">
                 <ul class="portfolio_list swiper-wrapper">
+                  <li class="portfolio_item swiper-slide">
+                    <div class="portfolio_item-image">
+                      <img src="img/site-1.png" width="400" height="400" alt="Проект">
+                    </div>
+                    <h3 class="portfolio_item-header">Интернет-магазин бильярдных столов</h3>
+                    <p class="portfolio_item-text"> Найдите свой идеальный стол для идеальной игры! Наш сайт предлагает широкий ассортимент качественных бильярдных столов на любой вкус и бюджет. Погрузитесь в атмосферу элитного отдыха и наслаждения игрой уже сегодня!</p>
+                    <ul class="portfolio_item-links">
+                      <li class="portfolio_item-link">
+                        <a href="https://anyakul.github.io/billiard/index.html" rel="nofollow" target="_blank">Ссылка на сайт</a>
+                      </li>
+                      <li class="portfolio_item-link">
+                        <a href="https://github.com/anyakul/billiard" rel="nofollow" target="_blank">Ссылка на гитхабе</a>
+                      </li>
+                    </ul>
+                  </li>
                   <li class="portfolio_item swiper-slide">
                     <div class="portfolio_item-image">
                       <img src="img/site-1.png" width="400" height="400" alt="Проект">
@@ -374,7 +388,7 @@
               <form class="contacts-form form" action="#" method="post">
                 <ul class="contacts-form_list">
                   <li class="contacts-form_item contacts-form_item-three">
-                    <label for="contacts_name" class="visually-hidden" autocomplete="off">Введите ваше имя</label>
+                    <label for="contacts_name" class="visually-hidden">Введите ваше имя</label>
                     <input type="text" id="contacts_name" name="name" placeholder="Введите ваше имя" autocomplete="off" required>
                   </li>
                   <li class="contacts-form_item contacts-form_item-three">
@@ -387,8 +401,8 @@
                       pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" autocomplete="off" required>
                   </li>
                   <li class="contacts-form_item contacts-form_item-one">
-                    <label for="contacts_message" class="visually-hidden" name="message">Сообщение</label>
-                    <textarea id="contacts_message" placeholder="Сообщение"></textarea>
+                    <label for="contacts_message" class="visually-hidden">Сообщение</label>
+                    <textarea id="contacts_message" placeholder="Сообщение"> name="message"</textarea>
                   </li>
                 </ul>
                 <button class="contacts-form_button blue-button" type="submit">Связаться с нами</button>

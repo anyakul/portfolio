@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/Involve-Medium.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/Involve-Regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/Involve-SemiBold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Roboto.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Robotobold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Robotomedium.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
   <title>Портфолио</title>
 </head>
@@ -50,7 +49,7 @@
               <form class="contacts-form form" action="#" method="post">
                 <ul class="contacts-form_list">
                   <li class="contacts-form_item contacts-form_item-three">
-                    <label for="contacts_name" class="visually-hidden" autocomplete="off">Введите ваше имя</label>
+                    <label for="contacts_name" class="visually-hidden">Введите ваше имя</label>
                     <input type="text" id="contacts_name" name="name" placeholder="Введите ваше имя" autocomplete="off" required>
                   </li>
                   <li class="contacts-form_item contacts-form_item-three">
@@ -63,8 +62,8 @@
                       pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}" autocomplete="off" required>
                   </li>
                   <li class="contacts-form_item contacts-form_item-one">
-                    <label for="contacts_message" class="visually-hidden" name="message">Сообщение</label>
-                    <textarea id="contacts_message" placeholder="Сообщение"></textarea>
+                    <label for="contacts_message" class="visually-hidden">Сообщение</label>
+                    <textarea id="contacts_message" placeholder="Сообщение" name="message"></textarea>
                   </li>
                 </ul>
                 <button class="contacts-form_button blue-button" type="submit">Связаться с нами</button>

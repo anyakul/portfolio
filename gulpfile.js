@@ -41,7 +41,7 @@ const ftp = gulp.series(reset, mainTasks, ftpLoad)
 export { start }
 export { ftp }
 
-ghPages.publish('deploy', {
+/*ghPages.publish('deploy', {
   branch: 'main',
   repo: 'https://github.com/anyakul/portfolio/'
-});
+});*/
