@@ -35,6 +35,11 @@ const mainTasks = gulp.parallel(copy, scss, jsSwiper, js, images, svg, fonts, zi
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
 
+/*ghPages.publish('deploy', {
+  branch: 'main',
+  repo: 'https://github.com/anyakul/portfolio/'
+});*/
+
 gulp.task('default', dev);
 const start = gulp.series(dev)
 const ftp = gulp.series(reset, mainTasks, ftpLoad)
