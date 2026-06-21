@@ -2207,7 +2207,7 @@ address {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 5px;
+  gap: 20px;
 }
 
 .social_link {
@@ -2220,16 +2220,15 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 48px;
-  min-width: 48px;
-  height: 34px;
-  border-radius: 50px;
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
 }
 
 .social_link svg {
   display: block;
-  max-width: 14px;
-  max-height: 14px;
+  max-width: 45px;
+  max-height: 45px;
   fill: #FFFFFF;
 }
 
@@ -2245,6 +2244,12 @@ address {
 
 .social_link-phone {
   background: linear-gradient(191.86deg, #58CE68 0%, #359E43 100%);
+  border-radius: 5px;
+}
+
+.social_link-phone svg {
+  width: 28px;
+  height: 28px;
 }
 
 .social_link-github {
@@ -2252,8 +2257,8 @@ address {
 }
 
 .social_link-github svg {
-  max-width: 35px;
-  max-height: 35px;
+  max-width: 45px;
+  max-height: 45px;
 }
 
 .contacts-form_button {
