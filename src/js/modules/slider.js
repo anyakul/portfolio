@@ -2,7 +2,7 @@ import Swiper, {Navigation, Pagination, Autoplay, EffectFade, Thumbs, Grid} from
 
 export function slider() {
   Swiper.use([Navigation, Pagination, Autoplay, EffectFade, Thumbs, Grid]);
-  const portfolioSwiper = new Swiper('.portfolio_slider', {
+  const swiper = new Swiper('.portfolio_slider', {
     direction: 'horizontal',
     slidesPerView: 'auto',
     loop: false,
@@ -10,6 +10,7 @@ export function slider() {
     watchOverflow: true,
     spaceBetween: 10,
     init: false,
+    watchOverflow: true,
     navigation: {
       nextEl: '.portfolio_button-next',
       prevEl: '.portfolio_button-prev',
@@ -23,30 +24,12 @@ export function slider() {
   })
 
   if (window.innerWidth < 768) {
-    portfolioSwiper.init();
+    swiper.init();
   }
-  /*const teamSwiper = new Swiper('.team-slider', {
-    direction: 'horizontal',
-    slidesPerView: 4,
-    slidesPerColumn: 2,
-    grid: {
-      enabled: true,
-      fill: 'row',
-      rows: 2
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 4,
-        slidesPerColumn: 2,
-      },
-      768: {
-        slidesPerView: 3,
-        slidesPerColumn: 2,
-      },
-      320: {
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-      }
-    }
-  })*/
+
+  //portfolioButtons = document.querySelector('.portfolio_nav-buttons');
+
+  /*if (portfolioSwiper.slidesPerViewDynamic.length == 1) {
+    portfolioButtons.addEventL
+  }*/
 }

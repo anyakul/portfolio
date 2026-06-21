@@ -7,8 +7,7 @@ export function form() {
 
     if (invalidFields.length === 0) {
         alert('Форма отправлена успешно!');
-      // Если нужно, тут можно отправить форму через стандартный submit
-      // this.submit();
+        window.location.href = '/';
     } else {
         alert('Пожалуйста, исправьте ошибки в форме.');
     }

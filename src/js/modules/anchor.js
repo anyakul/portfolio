@@ -2,7 +2,7 @@ export function anchor() {
   const links = document.querySelectorAll('a[href^="#"]');
 
   links.forEach((anchor) => {
-    let offsetPosition = -400; // Расстояние от верхнего края окна до блока
+    let offsetPosition = 120;
 
     if (anchor.getAttribute('href') != "#") {
       anchor.addEventListener('click', function (e) {

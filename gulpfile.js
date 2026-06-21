@@ -40,8 +40,3 @@ const start = gulp.series(dev)
 const ftp = gulp.series(reset, mainTasks, ftpLoad)
 export { start }
 export { ftp }
-
-ghPages.publish('deploy', {
-  branch: 'main',
-  repo: 'https://github.com/anyakul/portfolio/'
-});
